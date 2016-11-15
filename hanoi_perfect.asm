@@ -1,7 +1,7 @@
 	.data
 Move: .asciiz "Move disk "
-From: .asciiz " from peg "
-To: .asciiz " to peg "
+From: .asciiz " hacia torre "
+To: .asciiz " de torre "
 Fin: .asciiz ".\n"
 Intro: .asciiz "Introduce el número de discos: "
 	.text
@@ -16,7 +16,9 @@ Main:
 	
 	move $a0, $v0
 	
+	#empieza torre 
 	li $a1, 1
+	#termina en la torre
 	li $a2, 3
 	li $a3, 2
 	
