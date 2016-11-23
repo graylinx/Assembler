@@ -1,5 +1,5 @@
 .data
-Array: .word 2,5,1,4,7
+Array: .word 2,5,1,4,0
 .text
 
 main:
@@ -15,7 +15,7 @@ burbuja:
 loop:
 	addi $t0, $t0, 1
 	li $t1, 0
-	ble $t1, 4, loop_1
+	blt $t1, 4, loop_1
 	la $v0, Array
 	jr $ra
 loop_1:
