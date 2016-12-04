@@ -16,9 +16,9 @@ main:
 	#Torre en la que empieza
 	li $a1, 1
 	#Torre en la que acaba
-	li $a2, 3
+	li $a2, 2
 	#Torre extra
-	li $a3, 2
+	li $a3, 3
 	
 	jal hanoi
 	li $v0, 10
